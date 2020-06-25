@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<input type="number" id="num1" placeholder="num1">
+<input type="text" id="operator">
+<input type="number" id="num2" placeholder="num2">
+
+<button onclick="myFunction()">=</button>
+
+<script>
+let number1 = document.getElementById("num1"); 
+let number2 = document.getElementById("num2"); 
+let operator = document.getElementById("operator"); 
+function myFunction() {
+let myobject = {
+  "mynumbers" : [],
+  "ope" : "",
+  add : () => {
+    let result = Number(myobject.mynumbers[0]) + Number(myobject.mynumbers[1]);
+    alert(result);
+  }
+
+}
+if (number1.value) {
+myobject.mynumbers.push(number1.value);
+}
+if (number2.value) {
+myobject.mynumbers.push(number2.value);
+}
+
+if (operator.value) {
+myobject.ope = operator.value;
+}
+
+if (myobject.ope == "+") {
+  myobject.add();
+}
+
+
+}
+
+</script>
+</body>
+</html>
