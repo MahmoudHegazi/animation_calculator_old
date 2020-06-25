@@ -1,10 +1,16 @@
 
-/*
+/*.1. convert str to list and convert the strings in the list to numbers result list of numbers 
 function myFunction() {
-  var str = "1,222,333,44,22";
+  var str = "1,122,33,44,555";
   var res = str.split(",");
-  document.getElementById("demo").innerHTML = res[1];
-} */
+  document.getElementById("demo").innerHTML = res;
+  for (var i = 0; i < res.length; i++ ) {
+     res[i] = Number(res[i]);
+     
+  }
+  alert(typeof(res[2]));
+}
+*/
 const mybject = {
 	"numbers" : [],
 	"num1" : "",
