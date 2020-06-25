@@ -14,7 +14,10 @@ for (var i = 0; i < numbers.length; i++) {
   number -= numbers[i]; // becuase 0 - any thing = -anything  but I'm thinking
 }
 ```
+
+
 طيب النتيجة 
+
 (0) - (-number) = + 
 
 ``` javascript
