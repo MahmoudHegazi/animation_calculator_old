@@ -1,5 +1,10 @@
 
-
+/*
+function myFunction() {
+  var str = "1,222,333,44,22";
+  var res = str.split(",");
+  document.getElementById("demo").innerHTML = res[1];
+} */
 const mybject = {
 	"numbers" : [],
 	"num1" : "",
