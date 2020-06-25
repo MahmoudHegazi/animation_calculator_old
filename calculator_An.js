@@ -11,8 +11,10 @@ function myFunction() {
   alert(typeof(res[2]));
 }
 */
+// I'm fucking awesome 
 const mybject = {
 	"numbers" : [],
+	"myInputs" : "",
 	"num1" : "",
     "num2" : "",
 	"num3" : "",
@@ -65,6 +67,14 @@ const mybject = {
 	},
 	insert : function(x){
 		mybject.numbers.push();
+	},
+	converter : () => {
+		  var str = mybject.myInputs;
+          var res = str.split(",");
+          for (var i = 0; i < res.length; i++ ) {
+            res[i] = Number(res[i]);     
+          }
+		  mybject.numbers = res;
 	}
 	
 }
@@ -73,74 +83,90 @@ const mybject = {
 
 this.num_0.addEventListener("click", num0.bind(this));
 function num0() {
-   mybject.numbers.push(0);
-   this.screen.text = "0";
+   //mybject.numbers.push(0);
+   mybject.myInputs += "0";
+   this.screen.text += "0";
 }
 
 this.num_1.addEventListener("click", num1.bind(this));
 function num1() {
-   mybject.numbers.push(1);
-   this.screen.text = "1";
+    mybject.myInputs += "1";
+   //mybject.numbers.push(1);
+   this.screen.text += "1";
 }
 this.num_2.addEventListener("click", num2.bind(this));
 function num2() {
-   mybject.numbers.push(2);
-   this.screen.text = "2";
+	mybject.myInputs += "2";
+   //mybject.numbers.push(2);
+   this.screen.text += "2";
 }
 this.num_3.addEventListener("click", num3.bind(this));
 function num3() {
-   mybject.numbers.push(3);
-   this.screen.text = "3";
+	mybject.myInputs += "3";
+   //mybject.numbers.push(3);
+   this.screen.text += "3";
 }
 this.num_4.addEventListener("click", num4.bind(this));
 function num4() {
-   mybject.numbers.push(4);
-   this.screen.text = "4";
+	mybject.myInputs += "4";
+   //mybject.numbers.push(4);
+   this.screen.text += "4";
 }
 this.num_5.addEventListener("click", num5.bind(this));
 function num5() {
-   mybject.numbers.push(5);
-   this.screen.text = "5";
+	mybject.myInputs += "5";
+   //mybject.numbers.push(5);
+   this.screen.text += "5";
 }
 
 this.num_6.addEventListener("click", num6.bind(this));
 function num6() {
-   mybject.numbers.push(6);
-   this.screen.text = "6";
+	mybject.myInputs += "6";
+   //mybject.numbers.push(6);
+   this.screen.text += "6";
 }
 this.num_7.addEventListener("click", num7.bind(this));
 function num7() {
-   mybject.numbers.push(7);
-   this.screen.text = "7";
+	mybject.myInputs += "7";
+   //mybject.numbers.push(7);
+   this.screen.text += "7";
 }
 this.num_8.addEventListener("click", num8.bind(this));
 function num8() {
-   mybject.numbers.push(8);
-   this.screen.text = "8";
+	mybject.myInputs += "8";
+   //mybject.numbers.push(8);
+   this.screen.text += "8";
 }
 this.num_9.addEventListener("click", num9.bind(this));
 function num9() {
-   mybject.numbers.push(9);
-   this.screen.text = "9";
+	mybject.myInputs += "9";
+   //mybject.numbers.push(9);
+   this.screen.text += "9";
 }
 this.ope_add.addEventListener("click", adding.bind(this));
 function adding() {
    mybject.ope = "+";
-   this.screen.text = "+";
+   mybject.myInputs += ",";
+   this.screen.text += "+";
 }
 this.ope_multi.addEventListener("click", multiplaing.bind(this));
 function multiplaing() {
+   mybject.myInputs += ",";
    mybject.ope = "*";
-   this.screen.text = "*";
+   this.screen.text += "*";
 }
+
+// = 
 this.result.addEventListener("click", final_result.bind(this));
 function final_result() {
   	
   if (mybject.ope == "+") {
+	  mybject.converter();
 	  mybject.add();
 	  this.screen.text = mybject.result;
   }
   if (mybject.ope == "*") {
+	  mybject.converter();
 	  mybject.multi();
 	  this.screen.text = mybject.result;
   }
