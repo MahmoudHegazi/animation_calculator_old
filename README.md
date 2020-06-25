@@ -8,7 +8,7 @@ this is the map, I going to build JS calculator using adobe animation
 
 I created this from scratch 
 
-until now i finished adding and multiplay but their syntax of substrict and dividing not working on my mind yet
+until now i finished adding and multiplay but the syntax of substrict and dividing not working on my mind yet
 can't get it with rule like this
 found 1 soultion and will test it
 
