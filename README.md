@@ -1,4 +1,9 @@
 # animation_calculator
+
+main code = calculator_An.js
+animation_version_fulll = calculator.fla
+you have to download adobe animation to check this code 
+sorry it's professional work 
 this is the map, I going to build JS calculator using adobe animation
 
 I created this from scratch 
