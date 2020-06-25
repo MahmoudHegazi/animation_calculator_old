@@ -24,7 +24,7 @@ for (var i = 0; i < numbers.length; i++) {
 numbers = [];
 number = 0
 for (var i = 0; i < numbers.length; i++) {  
-  numbers[0] = numbers[0] * -1;
+  //numbers[0] = numbers[0] * -1;
   str = "-" + numberber[0];
   numberber[0] = Number(str);
   number -= numbers[i]; // becuase 0 - any thing = -anything  but I'm thinking
