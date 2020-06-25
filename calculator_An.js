@@ -12,6 +12,7 @@ function myFunction() {
 }
 */
 // I'm fucking awesome 
+
 const mybject = {
 	"numbers" : [],
 	"myInputs" : "",
@@ -147,13 +148,13 @@ this.ope_add.addEventListener("click", adding.bind(this));
 function adding() {
    mybject.ope = "+";
    mybject.myInputs += ",";
-   this.screen.text += "+";
+   this.screen.text += " + ";
 }
 this.ope_multi.addEventListener("click", multiplaing.bind(this));
 function multiplaing() {
    mybject.myInputs += ",";
    mybject.ope = "*";
-   this.screen.text += "*";
+   this.screen.text += " * ";
 }
 
 // = 
