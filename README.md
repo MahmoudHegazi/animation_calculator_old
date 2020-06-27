@@ -52,3 +52,10 @@ for (i = 0; i < cars.length; i++) {
 }
 alert(hend);
 ```
+
+## last problem Divide
+
+```javascript
+index = ?
+/= 
+```
