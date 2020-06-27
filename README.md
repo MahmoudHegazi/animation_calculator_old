@@ -53,9 +53,39 @@ for (i = 0; i < cars.length; i++) {
 alert(hend);
 ```
 
-## last problem Divide
+## last problem Divide (solved)
 
+the problem I didn't try to change the i value 
+```javascript
+array = [6, 2, 1];
+index = array[0];
+// for (var i=1) 
+```
+
+لو بدانا i = 1
+وخلينا index = array[0];
+عشان ميبقاش سفر او اي رقم تاني فيهاخد اول قيمة في القائمة
+
+كدا بقي 6 و مدام بدانا في 1 يبقي قيمة 
+array[i] = 2
+6 / 2 = 3
+واللي بعده 
+index = 3 / 1 = 3
 ```javascript
 index = ?
 /= 
 ```
+
+```javascript
+var cars = [12, 2, 3];
+var index = cars[0];
+for (i = 1; i < cars.length; i++) {
+  
+  index /= cars[i];
+  
+}
+
+
+alert(index);
+```
+
