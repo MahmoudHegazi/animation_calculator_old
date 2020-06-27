@@ -62,6 +62,7 @@ index = array[0];
 // for (var i=1) 
 ```
 
+```text
 لو بدانا 
 i = 1 وخلينا 
 index = array[0];
@@ -72,6 +73,8 @@ array[i] = 2
 6 / 2 = 3
 واللي بعده 
 index = 3 / 1 = 3
+```
+
 ```javascript
 index = ?
 /= 
