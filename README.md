@@ -22,7 +22,7 @@ for (var i = 0; i < numbers.length; i++) {
 
 
 طيب النتيجة 
-
+(Solved)
 (0) - (-number) = + 
 
 ``` javascript
@@ -34,4 +34,19 @@ for (var i = 0; i < numbers.length; i++) {
   numbers[0] = Number(str);
   number -= numbers[i]; // becuase 0 - any thing = -anything  but I'm thinking
 }
+```
+
+```javascript
+
+var cars = [5, 3, 1];
+var text = "";
+var hend = 0;
+var i;
+for (i = 0; i < cars.length; i++) {
+  if (i == 0) {
+    cars[i] = -cars[i];
+  }
+  hend -= cars[i];
+}
+alert(hend);
 ```
