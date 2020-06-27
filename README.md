@@ -36,6 +36,8 @@ for (var i = 0; i < numbers.length; i++) {
 }
 ```
 
+## Subtraction problem solved
+
 ```javascript
 
 var cars = [5, 3, 1];
