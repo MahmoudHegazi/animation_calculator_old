@@ -92,4 +92,5 @@ for (i = 1; i < cars.length; i++) {
 
 alert(index);
 ```
-
+divid function
+https://www.w3schools.com/code/tryit.asp?filename=GG8CLKB4OHLM
